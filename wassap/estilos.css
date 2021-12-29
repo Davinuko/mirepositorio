@@ -1,0 +1,66 @@
+ul li {
+    text-align: center;
+    background-color: aqua;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(29, 2, 137);
+    align-items: center;
+}
+
+main {
+    background-color: darkgrey;
+    margin: 3px;
+}
+
+footer {
+    background-color: grey;
+}
+
+fieldset{
+    background-color: white;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+}
+
+div{
+    display: inline-block;
+    border: solid 1px black;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border: 10px;
+}
+
+.despedida{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+}
+
+.columnas{
+    display: grid;
+    grid-template-columns: repeat(5,300px);
+    grid-template-rows: repeat(5,75px);
+    justify-content: space-evenly;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+@media screen and (max-width: 320px) {
+    .screen, div{
+        max-width: 320px;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
